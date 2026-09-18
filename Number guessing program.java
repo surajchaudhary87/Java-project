@@ -6,7 +6,7 @@ class Number {
         int myNumber = (int)(Math.random()*100);
         Scanner sc = new Scanner(System.in);
         int  userNumber=0;
-
+        sc.close();
         do{
 
             System.out.println("Guess the number (0-100) : ");
