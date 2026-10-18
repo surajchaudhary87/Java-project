@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+
+    //Function for checking intered charcter is vowel,consonant,number or symbol.
+    static void check(char ch){
+        
+        //Check if vowel
+        if((ch == 'a') || (ch == 'e') || (ch == 'i') || (ch == 'o') || (ch == 'u') || 
+        (ch == 'A') || (ch == 'E') || (ch == 'I') || (ch == 'O') || (ch == 'U')){
+            System.out.println("It is Vowel");
+        }
+        //Check if consonant
+        else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')){
+            System.out.println("It is Consonante");
+        }
+        //Check if number
+        else if(ch >='0' && ch <= '9'){
+            System.out.println("It is Number");
+        }
+        //If any case not match than it is symbol
+        else{
+            System.out.println("It is a Symbol");
+        }
+    
+    }
+
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a character: ");
+        char ch = sc.next().charAt(0);
+
+        check(ch);
+
+        sc.close();
+    }
+}
